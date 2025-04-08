@@ -1,10 +1,10 @@
 "use client"
 
-import { useViewMode } from "@/contexts/ViewModeContext"
-import ViewToggle from "@/components/ViewToggle"
-import SongGrid from "@/components/SongGrid"
-import SongList from "@/components/SongList"
-import config from "@/config/default/config"
+import { useViewMode } from "contexts/ViewModeContext"
+import ViewToggle from "components/ViewToggle"
+import SongGrid from "components/SongGrid"
+import SongList from "components/SongList"
+import config from "config/default/config"
 
 interface SearchResultsProps {
   songs: any[]
@@ -28,4 +28,3 @@ export default function SearchResults({ songs }: SearchResultsProps) {
     </>
   )
 }
-

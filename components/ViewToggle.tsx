@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import { Grid, List } from "lucide-react"
-import { useViewMode } from "@/contexts/ViewModeContext"
+import { useViewMode } from "contexts/ViewModeContext"
 
 interface ViewToggleProps {
   onViewChange: (view: "grid" | "list") => void
@@ -42,4 +42,3 @@ export default function ViewToggle({ onViewChange }: ViewToggleProps) {
     </div>
   )
 }
-

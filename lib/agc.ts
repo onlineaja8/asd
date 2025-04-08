@@ -1,4 +1,4 @@
-import config from "@/config/default/config"
+import config from "config/default/config"
 
 // Simple in-memory cache for Edge Runtime
 class SimpleCache {
@@ -255,4 +255,3 @@ class AGC {
 }
 
 export const agc = new AGC()
-

@@ -3,13 +3,13 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Music, Headphones, TrendingUp, Search } from "lucide-react"
-import config from "@/config/default/config"
-import { getTopSongs, getRecentSearches } from "@/lib/data"
-import FloatingMenu from "@/components/FloatingMenu"
-import ViewToggle from "@/components/ViewToggle"
-import { useViewMode } from "@/contexts/ViewModeContext"
-import SongGrid from "@/components/SongGrid"
-import SongList from "@/components/SongList"
+import config from "config/default/config"
+import { getTopSongs, getRecentSearches } from "lib/data"
+import FloatingMenu from "components/FloatingMenu"
+import ViewToggle from "components/ViewToggle"
+import { useViewMode } from "contexts/ViewModeContext"
+import SongGrid from "components/SongGrid"
+import SongList from "components/SongList"
 
 export default function ClientPage() {
   const { viewMode, setViewMode } = useViewMode()
@@ -100,4 +100,3 @@ export default function ClientPage() {
     </div>
   )
 }
-

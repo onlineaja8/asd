@@ -2,12 +2,12 @@ export const runtime = "edge"
 
 import Link from "next/link"
 import { Music, Share2, Clock, Calendar, User, Heart, ExternalLink } from "lucide-react"
-import config from "@/config/default/config"
-import { getSongById, getRelatedSongs } from "@/lib/data"
+import config from "config/default/config.json"
+import { getSongById, getRelatedSongs } from "lib/data"
 import type { Metadata } from "next"
-import FloatingMenu from "@/components/FloatingMenu"
-import VideoPlayer from "@/components/VideoPlayer"
-import ShareButtons from "@/components/ShareButtons"
+import FloatingMenu from "components/FloatingMenu"
+import VideoPlayer from "components/VideoPlayer"
+import ShareButtons from "components/ShareButtons"
 import DownloadButton from "./DownloadButton"
 import RelatedSongsSection from "./RelatedSongsSection"
 
@@ -149,4 +149,3 @@ export default async function DownloadPage({ params }: Props) {
     </div>
   )
 }
-

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Youtube, Mail } from "lucide-react"
-import config from "@/config/default/config"
+import config from "config/default/config"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -69,4 +69,3 @@ export default function Footer() {
     </footer>
   )
 }
-

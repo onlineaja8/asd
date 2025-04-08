@@ -1,7 +1,7 @@
 "use client"
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
-import config from "@/config/default/config"
+import config from "config/default/config"
 
 type ViewMode = "grid" | "list"
 
@@ -46,4 +46,3 @@ export function useViewMode() {
   }
   return context
 }
-

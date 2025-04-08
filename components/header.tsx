@@ -6,7 +6,7 @@ import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { X, ArrowLeft, Search, Menu, Home, Music, Info, Phone } from "lucide-react"
 import { useRouter, usePathname } from "next/navigation"
-import config from "@/config/default/config"
+import config from "config/default/config"
 
 export default function Header() {
   const [query, setQuery] = useState("")
@@ -186,4 +186,3 @@ export default function Header() {
     </header>
   )
 }
-

@@ -1,5 +1,5 @@
 import ClientPage from "./ClientPage"
-import config from "@/config/default/config"
+import config from "config/default/config"
 
 // Server component for metadata
 export const metadata = {
@@ -14,4 +14,3 @@ export const revalidate = 86400 // 24 hours in seconds
 export default function Home() {
   return <ClientPage />
 }
-

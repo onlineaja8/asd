@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
-import config from "@/config/default/config"
+import config from "config/default/config"
 
 export default function AdsScript() {
   useEffect(() => {
@@ -26,4 +26,3 @@ export default function AdsScript() {
 
   return null
 }
-

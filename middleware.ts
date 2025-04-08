@@ -2,7 +2,7 @@ export const runtime = "experimental-edge"
 
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
-import appConfig from "@/config/default/config"
+import appConfig from "config/default/config.json"
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
@@ -62,4 +62,3 @@ Sitemap: ${request.nextUrl.origin}/sitemap.xml`,
 export const config = {
   matcher: ["/admin/:path*", "/", "/f/:path*", "/e/:path*", "/robots.txt"],
 }
-

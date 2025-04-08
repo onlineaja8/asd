@@ -6,8 +6,8 @@ import Link from "next/link"
 import { useRouter, usePathname } from "next/navigation"
 import SearchModal from "./SearchModal"
 import ProfileModal from "./ProfileModal"
-import { useMobile } from "@/hooks/use-mobile"
-import config from "@/config/default/config"
+import { useMobile } from "hooks/use-mobile"
+import config from "config/default/config"
 
 export default function FloatingMenu() {
   const [searchModalOpen, setSearchModalOpen] = useState(false)
@@ -117,4 +117,3 @@ export default function FloatingMenu() {
     </>
   )
 }
-

@@ -1,7 +1,7 @@
 export const runtime = "edge"
 
 import { type NextRequest, NextResponse } from "next/server"
-import { getSongById } from "@/lib/data"
+import { getSongById } from "lib/data"
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
@@ -31,4 +31,3 @@ export async function GET(request: NextRequest) {
     `https://example.com/downloads/${id}?quality=${quality}&type=${type}&filename=${filename}`,
   )
 }
-

@@ -29,7 +29,7 @@
   "sitemap_index_permalink": "sitemap.xml",
   "footer_copyright": "%year% %site_name% - All rights reserved",
   "default_view_mode": "grid",
-  "api_base_url": "https://v0-dfdfde.vercel.app/api",
+  "api_base_url": "/api",
   "desktop_menu_position": "right",
   "mobile_menu_position": "bottom",
   "ads_script": "",
@@ -42,7 +42,7 @@
     {
       "id": "sample1",
       "title": "Sample Song 1",
-      "image": "/placeholder.svg?height=480&width=640",
+      "image": "/placeholder.svg",
       "duration": "3:45",
       "views": "1.2M",
       "uploaded": "2 months ago",
@@ -51,7 +51,7 @@
     {
       "id": "sample2",
       "title": "Sample Song 2",
-      "image": "/placeholder.svg?height=480&width=640",
+      "image": "/placeholder.svg",
       "duration": "4:20",
       "views": "850K",
       "uploaded": "1 month ago",
@@ -60,7 +60,7 @@
     {
       "id": "sample3",
       "title": "Sample Song 3",
-      "image": "/placeholder.svg?height=480&width=640",
+      "image": "/placeholder.svg",
       "duration": "3:15",
       "views": "2.1M",
       "uploaded": "3 months ago",

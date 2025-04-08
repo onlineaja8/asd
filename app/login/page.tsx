@@ -5,7 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Lock, User } from "lucide-react"
-import config from "@/config/default/config"
+import config from "config/default/config"
 import { setCookie } from "cookies-next"
 
 export default function LoginPage() {
@@ -105,4 +105,3 @@ export default function LoginPage() {
     </div>
   )
 }
-

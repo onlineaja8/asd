@@ -1,6 +1,6 @@
 "use client"
 
-import config from "@/config/default/config"
+import config from "config/default/config"
 import { usePathname } from "next/navigation"
 import AdsScript from "./AdsScript"
 
@@ -25,4 +25,3 @@ export default function HeadContent() {
     </>
   )
 }
-

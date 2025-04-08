@@ -1,7 +1,7 @@
 export const runtime = "edge"
 
 import { type NextRequest, NextResponse } from "next/server"
-import config from "@/config/default/config"
+import config from "config/default/config"
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
@@ -32,4 +32,3 @@ export async function GET(request: NextRequest) {
 
   return response
 }
-

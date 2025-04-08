@@ -8,4 +8,3 @@ type Config = typeof configJson
 const config: Config = configJson
 
 export default config
-

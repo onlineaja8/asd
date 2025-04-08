@@ -3,11 +3,11 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import "./assets/styles.css"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import HeadContent from "@/components/HeadContent"
-import config from "@/config/default/config"
-import { ViewModeProvider } from "@/contexts/ViewModeContext"
+import Header from "components/header"
+import Footer from "components/footer"
+import HeadContent from "components/HeadContent"
+import config from "config/default/config"
+import { ViewModeProvider } from "contexts/ViewModeContext"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -44,7 +44,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'

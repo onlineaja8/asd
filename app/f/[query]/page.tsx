@@ -1,10 +1,10 @@
 export const runtime = "edge"
 
 import { Music } from "lucide-react"
-import config from "@/config/default/config"
-import { searchSongs } from "@/lib/data"
+import config from "config/default/config"
+import { agc } from "lib/agc"
 import type { Metadata } from "next"
-import FloatingMenu from "@/components/FloatingMenu"
+import FloatingMenu from "components/FloatingMenu"
 import SearchResults from "./SearchResults"
 
 type Props = {
@@ -16,7 +16,7 @@ export const revalidate = 31536000 // 1 year in seconds
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const query = decodeURIComponent(params.query)
-  const songs = await searchSongs(query)
+  const songs = await agc.getSearch(query)
 
   return {
     title: config.search_title.replace("%query%", query).replace("%size%", songs.length.toString()),
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function SearchPage({ params }: Props) {
   const query = decodeURIComponent(params.query)
-  const songs = await searchSongs(query)
+  const songs = await agc.getSearch(query)
 
   return (
     <div className="container">
@@ -52,4 +52,3 @@ export default async function SearchPage({ params }: Props) {
     </div>
   )
 }
-
